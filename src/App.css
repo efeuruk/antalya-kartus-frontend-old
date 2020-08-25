@@ -3,6 +3,28 @@
   --secondary: #282c34;
 }
 
+.page-loading::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  z-index: 3;
+  height: 2px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: page-load infinite ease-out 2s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes page-load {
+  from {
+    background-color: var(--primary);
+  }
+  to {
+    background-color: white;
+  }
+}
+
 .container {
   max-width: 1170px;
   padding: 0 20px;
@@ -82,6 +104,25 @@
 .hamburger-menu .navbar__link {
   display: block;
   width: 100%;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    rgba(65, 54, 241, 1) 0%,
+    rgba(135, 67, 255, 1) 100%
+  );
+}
+
+.landing .btn-primary {
+  margin-top: 100px;
 }
 
 /* mobile - tablet */

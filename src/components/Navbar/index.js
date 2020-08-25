@@ -5,7 +5,7 @@ function List({ className }) {
   return (
     <ul className={className}>
       <li>
-        <a className="navbar__link" href="#">
+        <a className="navbar__link" href="/">
           Anasayfa
         </a>
       </li>

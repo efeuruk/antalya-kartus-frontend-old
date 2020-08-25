@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Landing from "./components/Landing";
 import Products from "./components/Products";
 import Services from "./components/Services";
 import "./App.css";
 
 function App() {
+  // Progress indicator that at the top of the page
+  useEffect(() => {
+    window.addEventListener(
+      "beforeunload",
+      () => {
+        document.body.classList.add("page-loading");
+      },
+      false
+    );
+  });
+
   return (
     <>
       <Landing />

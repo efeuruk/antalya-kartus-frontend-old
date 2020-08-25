@@ -6,6 +6,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Resets */
 p {
   font-size: 1rem;
 }
