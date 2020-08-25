@@ -1,3 +1,4 @@
+//TODO: Hamburgerde focus out, kesinlikle, çünük menü gezintisinde kapanmıyor
 import React, { useState } from "react";
 
 function List({ className }) {
@@ -14,8 +15,8 @@ function List({ className }) {
         </a>
       </li>
       <li>
-        <a className="navbar__link" href="#gallery">
-          Galeri
+        <a className="navbar__link" href="#products">
+          Ürünlerimiz
         </a>
       </li>
       <li>

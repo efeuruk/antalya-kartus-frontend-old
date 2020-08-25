@@ -1,14 +1,16 @@
-import React from 'react';
-import Landing from './components/Landing';
-import Gallery from './components/Gallery';
-import './App.css';
+import React from "react";
+import Landing from "./components/Landing";
+import Products from "./components/Products";
+import Services from "./components/Services";
+import "./App.css";
 
 function App() {
   return (
     <>
       <Landing />
       <div className="container">
-        <Gallery />
+        <Services />
+        <Products />
       </div>
     </>
   );
