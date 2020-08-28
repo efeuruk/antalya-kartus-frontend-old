@@ -11,9 +11,7 @@ function App() {
   useEffect(() => {
     window.addEventListener(
       "beforeunload",
-      () => {
-        document.body.classList.add("page-loading");
-      },
+      () => document.body.classList.add("page-loading"),
       false
     );
   });

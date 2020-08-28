@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <section className="about-us" id="about-us">
       <h2>Hakkımızda</h2>
-      <p className="about-us__descirption">
+      <p>
         Antalya kartuş 12 yıldır sektöründe öncü bir şekilde çalışmalarına devam
         etmektedir. Başta Antalya olmak üzere Türkiye'nin her yerindeki
         müşterilerine hizmet vermektedir. Lorem ipsum dolor sit amet consectetur
