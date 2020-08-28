@@ -1,9 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-  scroll-behavior: smooth;
+}
+
+section {
+  margin-bottom: 60px;
 }
 
 em {
@@ -16,36 +23,35 @@ ul {
 }
 
 .container {
-  max-width: 1170px;
   padding: 0 20px;
+  max-width: 2000px;
   @include breakMin($breakSmall) {
-    .container {
-      padding: 0 40px;
+    section {
+      width: 100%;
     }
+    padding: 0 80px;
   }
   @include breakMin($breakMedium) {
-    .container {
-      padding: 0 60px;
-    }
+    padding: 0 150px;
   }
   @include breakMin($breakLarge) {
-    .container {
-      padding: 0 80px;
-    }
+    padding: 0 250px;
   }
 }
 
-.page-loading::before {
-  content: " ";
-  display: block;
-  position: fixed;
-  z-index: 3;
-  height: 2px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  animation: page-load infinite ease-out 2s;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+.page-loading {
+  &::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    z-index: 3;
+    height: 2px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: page-load infinite ease-out 2s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @keyframes page-load {

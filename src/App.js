@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
-import Landing from "./components/Landing";
+import Landing from "./components/Pages/Landing";
+import AboutUs from "./components/Pages/AboutUs";
 import Products from "./components/Pages/Products";
 import Services from "./components/Pages/Services";
+import ContactUs from "./components/Pages/ContactUs";
 import "./App.scss";
 
 function App() {
@@ -20,8 +22,10 @@ function App() {
     <>
       <Landing />
       <div className="container">
-        <Services />
+        <AboutUs />
         <Products />
+        <Services />
+        <ContactUs />
       </div>
     </>
   );
