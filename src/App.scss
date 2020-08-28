@@ -6,11 +6,14 @@
 
 // Components
 @import "./components/Button/button";
-@import "./components/ContactUs/contactUs";
 @import "./components/Footer/footer";
 @import "./components/HamburgerButton/hamburgerButton";
 @import "./components/HamburgerMenu/hamburgerMenu";
-@import "./components/Landing/landing";
 @import "./components/Navbar/navbar";
-@import "./components/Products/products";
-@import "./components/Services/services";
+
+// Pages
+@import "./components/Pages/AboutUs/aboutUs";
+@import "./components/Pages/ContactUs/contactUs";
+@import "./components/Pages/Landing/landing";
+@import "./components/Pages/Products/products";
+@import "./components/Pages/Services/services";

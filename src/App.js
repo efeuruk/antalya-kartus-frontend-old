@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Landing from "./components/Landing";
-import Products from "./components/Products";
-import Services from "./components/Services";
+import Products from "./components/Pages/Products";
+import Services from "./components/Pages/Services";
 import "./App.scss";
 
 function App() {
