@@ -2,43 +2,4 @@
   p {
     font-size: 20px;
   }
-  .row {
-    display: flex;
-    flex-direction: column;
-    @include breakMin($breakSmall) {
-      flex-direction: row;
-    }
-  }
-  .col {
-    width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 30px;
-      @include breakMin($breakSmall) {
-        margin-right: 10%;
-      }
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  .card {
-    box-shadow: -2px 1px 54px 1px rgba(40, 44, 52, 0.35);
-    border-radius: 10px;
-    min-height: 250px;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__image {
-      border: 2px solid $secondary;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      overflow: hidden;
-      img {
-        width: 100%;
-      }
-    }
-  }
 }

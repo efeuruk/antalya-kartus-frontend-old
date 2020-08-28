@@ -19,12 +19,10 @@ function App() {
   return (
     <>
       <Landing />
-      <div className="container">
-        <AboutUs />
-        <Products />
-        <Services />
-        <ContactUs />
-      </div>
+      <AboutUs />
+      <Products />
+      {/* <Services />
+        <ContactUs /> */}
     </>
   );
 }

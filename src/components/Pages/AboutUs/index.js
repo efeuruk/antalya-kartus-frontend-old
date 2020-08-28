@@ -1,10 +1,11 @@
 import React from "react";
 import Avatar from "../../../assets/images/avatar.jpg";
-import Button from "../../Button";
+import HakanAvatar from "../../../assets/images/hakan.jpeg";
+import Card from "../../Card";
 
 export default function AboutUs() {
   return (
-    <section className="about-us" id="about-us">
+    <section className="about-us container" id="about-us">
       <h2>Hakkımızda</h2>
       <p>
         Antalya kartuş 12 yıldır sektöründe öncü bir şekilde çalışmalarına devam
@@ -17,30 +18,26 @@ export default function AboutUs() {
       <h3>Ekibimiz</h3>
       <div className="row">
         <div className="col">
-          <div className="card">
-            <div className="card__image">
-              <img src={Avatar} alt="avatar" />
-            </div>
-            <h4>Hakan Uruk</h4>
-            <Button
-              variant="secondary"
-              target="tel:+905343859841"
-              text="Bana Ulaşın"
-            />
-          </div>
+          <Card
+            imageSrc={HakanAvatar}
+            imageAlt="hakan_uruk"
+            cardTitle="Hakan Uruk"
+            withButton
+            buttonVariant="primary"
+            buttonTarget="tel:+905343859841"
+            buttonText="Bana Ulaşın"
+          />
         </div>
         <div className="col">
-          <div className="card">
-            <div className="card__image">
-              <img src={Avatar} alt="avatar" />
-            </div>
-            <h4>Ersin Zıvalı</h4>
-            <Button
-              variant="secondary"
-              target="tel:+905349552527"
-              text="Bana Ulaşın"
-            />
-          </div>
+          <Card
+            imageSrc={Avatar}
+            imageAlt="ersin_zıvalı"
+            cardTitle="Ersin Zıvalı"
+            withButton
+            buttonVariant="primary"
+            buttonTarget="tel:+905349552527"
+            buttonText="Bana Ulaşın"
+          />
         </div>
       </div>
     </section>

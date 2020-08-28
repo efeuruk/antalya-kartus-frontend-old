@@ -10,7 +10,10 @@ body {
 }
 
 section {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  @include breakMin($breakSmall) {
+    margin-bottom: 60px;
+  }
 }
 
 em {
@@ -20,23 +23,6 @@ em {
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-.container {
-  padding: 0 20px;
-  max-width: 2000px;
-  @include breakMin($breakSmall) {
-    section {
-      width: 100%;
-    }
-    padding: 0 80px;
-  }
-  @include breakMin($breakMedium) {
-    padding: 0 150px;
-  }
-  @include breakMin($breakLarge) {
-    padding: 0 250px;
-  }
 }
 
 .page-loading {
@@ -60,5 +46,42 @@ ul {
   }
   to {
     background-color: white;
+  }
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 2000px;
+  @include breakMin($breakSmall) {
+    section {
+      width: 100%;
+    }
+    padding: 0 80px;
+  }
+  @include breakMin($breakMedium) {
+    padding: 0 150px;
+  }
+  @include breakMin($breakLarge) {
+    padding: 0 250px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  @include breakMin($breakSmall) {
+    flex-direction: row;
+  }
+}
+.col {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    @include breakMin($breakSmall) {
+      margin-right: 10%;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
