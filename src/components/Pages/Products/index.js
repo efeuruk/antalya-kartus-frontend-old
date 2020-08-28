@@ -16,6 +16,7 @@ export default function Products() {
               imageSrc={Catridge}
               imageAlt="kartuş"
               cardTitle="Kartuş"
+              cardDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non cum amet"
               light
             />
           </div>
@@ -25,6 +26,7 @@ export default function Products() {
               imageSrc={Printer}
               imageAlt="yazıcı"
               cardTitle="Yazıcı"
+              cardDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non cum amet"
               light
             />
           </div>
@@ -34,6 +36,7 @@ export default function Products() {
               imageSrc={TillRoll}
               imageAlt="yazar kasa fişi"
               cardTitle="Yazar Kasa Fişi"
+              cardDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non cum amet"
               light
             />
           </div>

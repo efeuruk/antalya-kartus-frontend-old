@@ -6,6 +6,7 @@ export default function Card({
   imageSrc,
   imageAlt,
   cardTitle,
+  cardDesc,
   withButton,
   light,
   buttonVariant,
@@ -18,6 +19,7 @@ export default function Card({
         <img src={imageSrc} alt={imageAlt} />
       </div>
       <h4>{cardTitle}</h4>
+      {cardDesc ? <p className="card__description">{cardDesc}</p> : null}
       {withButton ? (
         <Button
           variant={buttonVariant}

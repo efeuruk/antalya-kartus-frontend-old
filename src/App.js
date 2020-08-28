@@ -4,6 +4,7 @@ import AboutUs from "./components/Pages/AboutUs";
 import Products from "./components/Pages/Products";
 import Services from "./components/Pages/Services";
 import ContactUs from "./components/Pages/ContactUs";
+import Footer from "./components/Footer";
 import "./App.scss";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Products />
       {/* <Services />
         <ContactUs /> */}
+      <Footer />
     </>
   );
 }

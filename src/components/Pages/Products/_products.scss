@@ -2,4 +2,11 @@
   padding: 30px 0 40px;
   background-color: $secondary;
   color: white;
+  .col {
+    &:not(:last-child) {
+      @include breakMin($breakSmall) {
+        margin-right: 4%;
+      }
+    }
+  }
 }
