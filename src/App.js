@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Landing from "./components/Landing";
 import Products from "./components/Products";
 import Services from "./components/Services";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   // Progress indicator that at the top of the page

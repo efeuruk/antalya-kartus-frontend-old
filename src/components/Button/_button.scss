@@ -1,0 +1,13 @@
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 16px;
+  &.btn-primary {
+    background: linear-gradient(
+      90deg,
+      rgba(65, 54, 241, 1) 0%,
+      rgba(135, 67, 255, 1) 100%
+    );
+  }
+}

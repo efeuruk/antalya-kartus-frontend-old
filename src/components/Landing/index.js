@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import Button from "../Button";
 
 export default function Landing() {
   return (
@@ -9,10 +10,7 @@ export default function Landing() {
       <p>
         Yıllardır Kartuşun <em>Tek</em> Adresi
       </p>
-      <a className="btn btn-primary" href="#contact-us">
-        Bize Ulaşın{" "}
-        <i style={{ marginLeft: "10px" }} className="fas fa-arrow-right"></i>
-      </a>
+      <Button variant="primary" />
     </div>
   );
 }

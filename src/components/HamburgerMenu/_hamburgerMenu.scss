@@ -1,0 +1,36 @@
+.hamburger-menu {
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: $secondary;
+  -webkit-box-shadow: 17px 0px 44px -5px rgba(135, 67, 255, 1);
+  -moz-box-shadow: 17px 0px 44px -5px rgba(135, 67, 255, 1);
+  box-shadow: 17px 0px 44px -5px rgba(135, 67, 255, 1);
+  transition: all 0.3s;
+  &.active {
+    width: 200px;
+    padding: 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include breakMin($breakSmall) {
+      display: none;
+    }
+  }
+  ul {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 65%;
+  }
+  .copyright {
+    margin-top: 80px;
+  }
+  .navbar__link {
+    display: block;
+    width: 100%;
+  }
+}
