@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function ContactUs() {
   const focus = (e) => {
@@ -41,17 +41,27 @@ export default function ContactUs() {
           />
         </div>
         <div className="input-container">
-          <label htmlFor="services-menu">
+          <label className="sr-only" htmlFor="services-menu">
             Almak istediğiniz hizmeti seçiniz:
           </label>
-          <select id="services-menu">
+          <select
+            className="dropdown"
+            id="services-menu"
+            onFocus={(e) => focus(e)}
+            onBlur={(e) => blur(e)}
+          >
+            <option value="">Hizmet Seçin</option>
             <option value="kartus_dolum">Kartuş Dolum</option>
             <option value="yazici_al">Yazıcı Satın Alma</option>
             <option value="yazici_tamir">Yazıcı Tamir Ettirmek</option>
             <option value="yazar_kasa">Yazar Kasa Fişi Satın Alma</option>
           </select>
         </div>
-        <input type="submit" value="Gönder" />
+        <input
+          className="btn btn-secondary send"
+          type="submit"
+          value="Gönder"
+        />
       </form>
     </section>
   );

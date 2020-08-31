@@ -20,11 +20,11 @@ export default function NavList({ variant }) {
             Ürünlerimiz
         </a>
         </li>
-        <li>
+        {/* <li>
           <a className="navbar__link" href="#services">
             Hizmetlerimiz
         </a>
-        </li>
+        </li> */}
         <li>
           <a className="navbar__link" href="#contact-us">
             Bize Ulaşın

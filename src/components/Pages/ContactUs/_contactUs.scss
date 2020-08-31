@@ -1,8 +1,19 @@
 .contact-us {
+  form {
+    @include breakMin($breakMedium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
   .input-container {
     margin-bottom: 20px;
   }
-  .input {
+  label {
+    display: block;
+  }
+  .input,
+  .dropdown {
     width: 200px;
     border: none;
     border-bottom: 1px solid $secondary;
@@ -10,18 +21,31 @@
     outline: none;
     font-size: 16px;
     color: $secondary;
-    transition: width 0.5s;
+    transition: all 0.3s;
     &::placeholder {
       color: $secondary;
       opacity: 0.6;
     }
-    &:focus {
+    &.selected {
+      width: 240px;
       &::placeholder {
         opacity: 1;
       }
     }
-    &.selected {
-      width: 250px;
+  }
+  .dropdown {
+    option {
+      &:hover {
+        color: white;
+        background-color: $secondary;
+      }
     }
+  }
+  .send {
+    width: 200px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 }
