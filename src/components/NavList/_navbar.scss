@@ -4,20 +4,24 @@
     color: white;
     text-decoration: none;
     transition: color 0.5s;
+    padding: 10px;
     &:hover {
       color: $primary;
     }
   }
   @include breakMin($breakSmall) {
+    position: fixed;
+    display: block;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
     top: 0;
     left: 0;
+    background-color: $secondary;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
     &__link {
       font-size: 20px;
-      margin-right: 20px;
     }
   }
 }

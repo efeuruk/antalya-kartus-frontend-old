@@ -22,8 +22,8 @@ function App() {
       <Landing />
       <AboutUs />
       <Products />
-      {/* <Services />
-        <ContactUs /> */}
+      {/* <Services /> */}
+      <ContactUs />
       <Footer />
     </>
   );

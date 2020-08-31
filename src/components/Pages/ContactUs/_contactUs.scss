@@ -1,2 +1,27 @@
 .contact-us {
+  .input-container {
+    margin-bottom: 20px;
+  }
+  .input {
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid $secondary;
+    padding-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+    color: $secondary;
+    transition: width 0.5s;
+    &::placeholder {
+      color: $secondary;
+      opacity: 0.6;
+    }
+    &:focus {
+      &::placeholder {
+        opacity: 1;
+      }
+    }
+    &.selected {
+      width: 250px;
+    }
+  }
 }

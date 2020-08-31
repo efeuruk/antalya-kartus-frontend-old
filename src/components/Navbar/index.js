@@ -1,4 +1,5 @@
 //TODO: Hamburgerde focus out, kesinlikle, çünkü menü gezintisinde kapanmıyor
+// TODO: Navbarları birleştir, 2 kere componentı render etme
 import React, { useState, useEffect } from "react";
 import NavList from '../NavList';
 import HamburgerButton from '../HamburgerButton';

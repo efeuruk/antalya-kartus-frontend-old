@@ -4,7 +4,7 @@ import Button from "../../Button";
 
 export default function Landing() {
   return (
-    <section className="landing">
+    <section id="home" className="landing">
       <Navbar />
       <h1>Antalya Kartuş</h1>
       <p>
