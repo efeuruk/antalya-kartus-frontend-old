@@ -1,6 +1,6 @@
 const servicesDropdownOptions = [
     {
-        value: "",
+        value: " ",
         option: "Hizmet Seçiniz",
     },
     {
