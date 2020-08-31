@@ -1,6 +1,6 @@
 //TODO: Make dropdown a seperate component with a div and dynamic height etc.
-//TODO: Make input fields a seperate component
 import React from "react";
+import Input from "../../Input";
 
 export default function ContactUs() {
   const eventHandler = (e) => {
@@ -15,36 +15,18 @@ export default function ContactUs() {
       <h2>Bize Ulaşın</h2>
       <p>Siparişinizi lütfen belirtin, size hemen ulaştıralım</p>
       <form action="" autoComplete="off">
-        <div className="input-container">
-          <label className="sr-only" htmlFor="name-surname">
-            Adızın ve Soyadınız
-          </label>
-          <input
-            type="text"
-            id="name-surname"
-            className="input"
-            name="nameSurname"
-            placeholder="Adınız ve Soyadınız"
-            onFocus={(e) => eventHandler(e)}
-            onBlur={(e) => eventHandler(e)}
-          />
-          <span></span>
-        </div>
-        <div className="input-container">
-          <label className="sr-only" htmlFor="phone-number">
-            Telefon Numaranız
-          </label>
-          <input
-            type="tel"
-            id="phone-number"
-            className="input"
-            name="phoneNumber"
-            placeholder="Telefon Numranız"
-            onFocus={(e) => eventHandler(e)}
-            onBlur={(e) => eventHandler(e)}
-          />
-          <span></span>
-        </div>
+        <Input
+          type="text"
+          id="name-surname"
+          name="nameSurname"
+          placeholder="Adınzı ve Soyadınız"
+        />
+        <Input
+          type="text"
+          id="phone-number"
+          name="phoneNumber"
+          placeholder="Telefon Numranız"
+        />
         <div className="input-container">
           <label className="sr-only" htmlFor="services-menu">
             Almak istediğiniz hizmeti seçiniz:
