@@ -15,7 +15,7 @@ export default function Navbar() {
   const focusOut = () => {
     const body = document.querySelector("body");
     body.addEventListener("click", (e) => {
-      console.log(e.target.classList.contains("fa-arrow-left"));
+      // console.log(e.target.classList.contains("fa-arrow-left"));
       if (
         !e.target.classList.contains("hamburger-menu") ||
         e.target.classList.contains(".fa-arrow-left")

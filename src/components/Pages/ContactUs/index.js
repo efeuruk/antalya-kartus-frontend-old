@@ -3,17 +3,18 @@
 import React from "react";
 
 export default function ContactUs() {
-  const focus = (e) => {
-    e.target.classList.add("selected");
-  };
-  const blur = (e) => {
-    e.target.classList.remove("selected");
+  const eventHandler = (e) => {
+    const input = e.target;
+    const span = input.nextElementSibling;
+    const eventType = e.type;
+    input.classList[eventType === "focus" ? "add" : "remove"]("selected");
+    span.classList[eventType === "focus" ? "add" : "remove"]("selected");
   };
   return (
     <section id="contact-us" className="contact-us container">
       <h2>Bize Ulaşın</h2>
       <p>Siparişinizi lütfen belirtin, size hemen ulaştıralım</p>
-      <form action="">
+      <form action="" autoComplete="off">
         <div className="input-container">
           <label className="sr-only" htmlFor="name-surname">
             Adızın ve Soyadınız
@@ -24,9 +25,10 @@ export default function ContactUs() {
             className="input"
             name="nameSurname"
             placeholder="Adınız ve Soyadınız"
-            onFocus={(e) => focus(e)}
-            onBlur={(e) => blur(e)}
+            onFocus={(e) => eventHandler(e)}
+            onBlur={(e) => eventHandler(e)}
           />
+          <span></span>
         </div>
         <div className="input-container">
           <label className="sr-only" htmlFor="phone-number">
@@ -38,9 +40,10 @@ export default function ContactUs() {
             className="input"
             name="phoneNumber"
             placeholder="Telefon Numranız"
-            onFocus={(e) => focus(e)}
-            onBlur={(e) => blur(e)}
+            onFocus={(e) => eventHandler(e)}
+            onBlur={(e) => eventHandler(e)}
           />
+          <span></span>
         </div>
         <div className="input-container">
           <label className="sr-only" htmlFor="services-menu">
@@ -49,8 +52,8 @@ export default function ContactUs() {
           <select
             className="dropdown"
             id="services-menu"
-            onFocus={(e) => focus(e)}
-            onBlur={(e) => blur(e)}
+            onFocus={(e) => eventHandler(e)}
+            onBlur={(e) => eventHandler(e)}
           >
             <option value="">Hizmet Seçin</option>
             <option value="kartus_dolum">Kartuş Dolum</option>
@@ -58,6 +61,7 @@ export default function ContactUs() {
             <option value="yazici_tamir">Yazıcı Tamir Ettirmek</option>
             <option value="yazar_kasa">Yazar Kasa Fişi Satın Alma</option>
           </select>
+          <span></span>
         </div>
         <input
           className="btn btn-secondary send"
