@@ -1,13 +1,7 @@
 import React from 'react'
+import focusAndBlurHandler from '../../helpers/focusAndBlurHandler';
 
 export default function Input({ type, id, name, placeholder }) {
-    const eventHandler = (e) => {
-        const input = e.target;
-        const span = input.nextElementSibling;
-        const eventType = e.type;
-        input.classList[eventType === "focus" ? "add" : "remove"]("selected");
-        span.classList[eventType === "focus" ? "add" : "remove"]("selected");
-    };
     return (
         <div className="input-container">
             <label className="sr-only" htmlFor="name-surname">
@@ -19,8 +13,8 @@ export default function Input({ type, id, name, placeholder }) {
                 className="input"
                 name={name}
                 placeholder={placeholder}
-                onFocus={(e) => eventHandler(e)}
-                onBlur={(e) => eventHandler(e)}
+                onFocus={(e) => focusAndBlurHandler(e)}
+                onBlur={(e) => focusAndBlurHandler(e)}
             />
             <span></span>
         </div>
