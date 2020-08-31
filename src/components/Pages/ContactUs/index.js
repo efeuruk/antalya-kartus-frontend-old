@@ -1,3 +1,5 @@
+//TODO: Make dropdown a seperate component with a div and dynamic height etc.
+//TODO: Make input fields a seperate component
 import React from "react";
 
 export default function ContactUs() {
