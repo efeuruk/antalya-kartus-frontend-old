@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function HamburgerButton({ openHamburger, open }) {
+export default function HamburgerButton({ openHamburger }) {
     return (
-        <button className="hamburger-button" onClick={() => openHamburger()}>
-            <i className={`fas fa-${open ? "arrow-left" : "bars"}`}></i>
-        </button>
+        <div className="hamburger-button">
+            <button className="hamburger-button__button" onClick={() => openHamburger()}>
+                <i className="fas fa-bars"></i>
+            </button>
+        </div>
+
     );
 }

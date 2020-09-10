@@ -4,7 +4,7 @@ import React from "react";
 export default function NavList({ variant }) {
   return (
     <div className={variant}>
-      <ul className="container">
+      <ul className={`${variant ? " container" : ""}`}>
         <li>
           <a className="navbar__link" href="#home">
             Anasayfa
@@ -20,17 +20,12 @@ export default function NavList({ variant }) {
             Ürünlerimiz
         </a>
         </li>
-        {/* <li>
-          <a className="navbar__link" href="#services">
-            Hizmetlerimiz
-        </a>
-        </li> */}
         <li>
           <a className="navbar__link" href="#contact-us">
             Bize Ulaşın
         </a>
         </li>
       </ul>
-    </div>
+    </div >
   );
 }

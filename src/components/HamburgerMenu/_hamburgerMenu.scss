@@ -2,7 +2,8 @@
   width: 0;
   overflow: hidden;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
   background-color: $secondary;
   -webkit-box-shadow: 17px 0px 44px -5px rgba(135, 67, 255, 1);
@@ -12,9 +13,6 @@
   &.active {
     width: 200px;
     padding: 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     @include breakMin($breakSmall) {
       display: none;
     }
@@ -24,7 +22,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 65%;
+    margin-top: 45%;
+  }
+  &__button {
+    display: block;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    color: $primary;
   }
   .copyright {
     margin-top: 80px;

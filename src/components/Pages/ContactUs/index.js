@@ -1,4 +1,3 @@
-//TODO: Make dropdown a seperate component with a div and dynamic height etc.
 import React from "react";
 import Input from "../../Input";
 import Dropdown from "../../Dropdown";

@@ -1,15 +1,20 @@
 .hamburger-button {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  font-size: 20px;
-  color: $primary;
-  z-index: 2;
-  @include breakMin($breakSmall) {
-    display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: $secondary;
+  &__button {
+    display: block;
+    margin: 20px 0 20px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    color: $primary;
+    @include breakMin($breakSmall) {
+      display: none;
+    }
   }
 }
